@@ -49,6 +49,7 @@ import {
   type GalleryRecord,
   type OfficeLocationRecord,
   type TestimonialRecord,
+  type TurismoContent,
 } from "@/lib/turismo-content";
 
 const quoteSchema = z.object({
@@ -148,7 +149,7 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
-  const content = Route.useLoaderData();
+  const content = Route.useLoaderData() as TurismoContent;
   const testimonials = content.testimonials.length > 0 ? content.testimonials : fallbackTestimonials;
   const fleet = content.fleet;
   const locations = content.locations;
