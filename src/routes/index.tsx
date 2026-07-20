@@ -216,7 +216,7 @@ function Index() {
           <div className="luxury-grid absolute inset-0 opacity-20" />
         </div>
 
-        <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col justify-between px-6 pb-8 pt-6 md:px-10">
+        <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-6 pb-8 pt-6 md:px-10">
           <header className="glass-panel flex items-center justify-between rounded-[8px] px-4 py-3 md:px-6">
             <div>
               <p className="font-display text-xl text-foreground md:text-2xl">Turismo Galaxy</p>
