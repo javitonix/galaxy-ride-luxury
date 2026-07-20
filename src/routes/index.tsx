@@ -230,7 +230,7 @@ function Index() {
             </nav>
           </header>
 
-          <div className="grid gap-10 pb-12 pt-16 lg:grid-cols-[minmax(0,1.15fr)_minmax(320px,0.85fr)] lg:items-end lg:gap-16 lg:pb-20">
+          <div className="grid gap-10 pb-12 pt-16 lg:grid-cols-[minmax(0,1.15fr)_minmax(320px,0.85fr)] lg:items-center lg:gap-16 lg:pb-20">
             <motion.div
               initial={{ opacity: 0, y: 32 }}
               animate={{ opacity: 1, y: 0 }}
