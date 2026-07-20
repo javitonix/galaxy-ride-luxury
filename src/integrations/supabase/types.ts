@@ -14,7 +14,249 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      contact_information: {
+        Row: {
+          created_at: string
+          email: string | null
+          id: string
+          label: string
+          primary_phone: string | null
+          secondary_phone: string | null
+          support_copy: string | null
+          updated_at: string
+          website_url: string | null
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          id?: string
+          label: string
+          primary_phone?: string | null
+          secondary_phone?: string | null
+          support_copy?: string | null
+          updated_at?: string
+          website_url?: string | null
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          id?: string
+          label?: string
+          primary_phone?: string | null
+          secondary_phone?: string | null
+          support_copy?: string | null
+          updated_at?: string
+          website_url?: string | null
+        }
+        Relationships: []
+      }
+      fleet: {
+        Row: {
+          amenities: string[]
+          brand: string | null
+          code: string
+          created_at: string
+          description: string | null
+          gallery_urls: string[]
+          hero_image_url: string | null
+          id: string
+          is_featured: boolean
+          name: string
+          passenger_capacity: number | null
+          sort_order: number
+          specs: Json
+          unit_number: string | null
+          updated_at: string
+        }
+        Insert: {
+          amenities?: string[]
+          brand?: string | null
+          code: string
+          created_at?: string
+          description?: string | null
+          gallery_urls?: string[]
+          hero_image_url?: string | null
+          id?: string
+          is_featured?: boolean
+          name: string
+          passenger_capacity?: number | null
+          sort_order?: number
+          specs?: Json
+          unit_number?: string | null
+          updated_at?: string
+        }
+        Update: {
+          amenities?: string[]
+          brand?: string | null
+          code?: string
+          created_at?: string
+          description?: string | null
+          gallery_urls?: string[]
+          hero_image_url?: string | null
+          id?: string
+          is_featured?: boolean
+          name?: string
+          passenger_capacity?: number | null
+          sort_order?: number
+          specs?: Json
+          unit_number?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      gallery_items: {
+        Row: {
+          alt_text: string | null
+          category: string
+          created_at: string
+          description: string | null
+          id: string
+          image_url: string | null
+          is_published: boolean
+          sort_order: number
+          title: string
+          updated_at: string
+        }
+        Insert: {
+          alt_text?: string | null
+          category: string
+          created_at?: string
+          description?: string | null
+          id?: string
+          image_url?: string | null
+          is_published?: boolean
+          sort_order?: number
+          title: string
+          updated_at?: string
+        }
+        Update: {
+          alt_text?: string | null
+          category?: string
+          created_at?: string
+          description?: string | null
+          id?: string
+          image_url?: string | null
+          is_published?: boolean
+          sort_order?: number
+          title?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      office_locations: {
+        Row: {
+          address: string
+          city: string
+          created_at: string
+          email: string | null
+          id: string
+          map_label: string | null
+          name: string
+          phone_numbers: string[]
+          sort_order: number
+          updated_at: string
+          whatsapp_number: string | null
+        }
+        Insert: {
+          address: string
+          city: string
+          created_at?: string
+          email?: string | null
+          id?: string
+          map_label?: string | null
+          name: string
+          phone_numbers?: string[]
+          sort_order?: number
+          updated_at?: string
+          whatsapp_number?: string | null
+        }
+        Update: {
+          address?: string
+          city?: string
+          created_at?: string
+          email?: string | null
+          id?: string
+          map_label?: string | null
+          name?: string
+          phone_numbers?: string[]
+          sort_order?: number
+          updated_at?: string
+          whatsapp_number?: string | null
+        }
+        Relationships: []
+      }
+      social_media_links: {
+        Row: {
+          created_at: string
+          handle: string | null
+          id: string
+          label: string
+          platform: string
+          sort_order: number
+          updated_at: string
+          url: string | null
+        }
+        Insert: {
+          created_at?: string
+          handle?: string | null
+          id?: string
+          label: string
+          platform: string
+          sort_order?: number
+          updated_at?: string
+          url?: string | null
+        }
+        Update: {
+          created_at?: string
+          handle?: string | null
+          id?: string
+          label?: string
+          platform?: string
+          sort_order?: number
+          updated_at?: string
+          url?: string | null
+        }
+        Relationships: []
+      }
+      testimonials: {
+        Row: {
+          avatar_url: string | null
+          created_at: string
+          customer_name: string
+          customer_role: string | null
+          id: string
+          is_published: boolean
+          quote: string
+          rating: number
+          sort_order: number
+          updated_at: string
+        }
+        Insert: {
+          avatar_url?: string | null
+          created_at?: string
+          customer_name: string
+          customer_role?: string | null
+          id?: string
+          is_published?: boolean
+          quote: string
+          rating?: number
+          sort_order?: number
+          updated_at?: string
+        }
+        Update: {
+          avatar_url?: string | null
+          created_at?: string
+          customer_name?: string
+          customer_role?: string | null
+          id?: string
+          is_published?: boolean
+          quote?: string
+          rating?: number
+          sort_order?: number
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
