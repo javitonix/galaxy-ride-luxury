@@ -237,12 +237,12 @@ function Index() {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="max-w-3xl"
             >
-              <p className="text-sm uppercase tracking-[0.28em] text-brand">25+ años de experiencia</p>
+              <p className="text-sm uppercase tracking-[0.28em] text-brand">Más de 25 años de experiencia</p>
               <h1 className="font-display mt-6 text-5xl leading-none text-foreground md:text-7xl">
-                Movilidad premium para viajes que exigen presencia, puntualidad y confort.
+                Movilidad premium.
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-7 text-muted-foreground md:text-lg">
-                Operación ejecutiva para turismo, corporativos, eventos y traslados de grupos con atención personalizada desde Querétaro, Celaya y Tarimoro.
+                Viajes que exigen excelencia, puntualidad y confort.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
